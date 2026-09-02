@@ -1,0 +1,15 @@
+node_modules
+.nuxt
+.output
+dist
+.firebase
+*.log
+.env
+.env.*
+!.env.example
+functions/.env
+functions/.env.*
+!functions/.env.example
+functions/service-account.json
+firebase-debug.log
+firebase-debug.*.log

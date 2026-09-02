@@ -1,0 +1,25 @@
+{
+  "name": "hypnose-r",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "dev:live-api": "set NUXT_IGNORE_LOCK=1&& nuxt dev --dotenv .env.local --port 4173",
+    "build": "nuxt generate",
+    "build:ssg": "nuxt generate",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@quasar/extras": "^2.0.2",
+    "nuxt": "^3.17.6",
+    "quasar": "^2.21.4",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.3",
+    "vue-tsc": "^2.1.10"
+  }
+}

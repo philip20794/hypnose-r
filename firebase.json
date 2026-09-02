@@ -1,0 +1,123 @@
+{
+  "hosting": {
+    "public": ".output/public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "/images/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000"
+          }
+        ]
+      },
+      {
+        "source": "/bestaetigen/**",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex, nofollow"
+          }
+        ]
+      },
+      {
+        "source": "/termin-reserviert",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex, nofollow"
+          }
+        ]
+      },
+      {
+        "source": "/termin-reserviert/**",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex, nofollow"
+          }
+        ]
+      },
+      {
+        "source": "/api/**",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex, nofollow"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/slots",
+        "function": {
+          "functionId": "hypnoseGetAvailableSlots",
+          "region": "us-central1"
+        }
+      },
+      {
+        "source": "/api/reservations",
+        "function": {
+          "functionId": "hypnoseCreateReservation",
+          "region": "us-central1"
+        }
+      },
+      {
+        "source": "/api/reservation",
+        "function": {
+          "functionId": "hypnoseGetReservation",
+          "region": "us-central1"
+        }
+      },
+      {
+        "source": "/api/reservation/confirm",
+        "function": {
+          "functionId": "hypnoseConfirmReservation",
+          "region": "us-central1"
+        }
+      },
+      {
+        "source": "/api/reservation/cancel",
+        "function": {
+          "functionId": "hypnoseCancelReservation",
+          "region": "us-central1"
+        }
+      },
+      {
+        "source": "/bestaetigen/**",
+        "destination": "/200.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/datenschutz",
+        "destination": "/datenschutzerklaerung/",
+        "type": 301
+      },
+      {
+        "source": "/agb",
+        "destination": "/allgemeinegeschaeftsbedingungen/",
+        "type": 301
+      }
+    ]
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

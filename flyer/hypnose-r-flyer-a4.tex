@@ -1,0 +1,282 @@
+\documentclass[10pt]{article}
+
+\usepackage[landscape,a4paper,margin=0mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{mathpazo}
+\usepackage[scaled=0.92]{helvet}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{qrcode}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{night}{HTML}{06030A}
+\definecolor{aubergine}{HTML}{100B18}
+\definecolor{surface}{HTML}{191122}
+\definecolor{lavender}{HTML}{A78BFA}
+\definecolor{lavenderSoft}{HTML}{B7A8CF}
+\definecolor{accent}{HTML}{D6A84F}
+\definecolor{gold}{HTML}{B9914B}
+\definecolor{paper}{HTML}{F8F1E7}
+\definecolor{paperLight}{HTML}{FFFBF3}
+\definecolor{ink}{HTML}{24182F}
+\definecolor{muted}{HTML}{61596A}
+\definecolor{line}{HTML}{D5C6B2}
+
+\newcommand{\PanelW}{148.5}
+\newcommand{\PanelH}{210}
+\newcommand{\SiteUrl}{hypnose-r.de}
+\newcommand{\BookingUrl}{hypnose-r.de/termin-buchen}
+\newcommand{\FullBookingUrl}{https://hypnose-r.de/termin-buchen}
+
+\newcommand{\Sans}[1]{{\fontfamily{phv}\selectfont #1}}
+
+\newcommand{\CutLine}{%
+  \draw[line width=0.25pt, dashed, color=line] (148.5,0) -- (148.5,210);
+  \node[rotate=90, anchor=center, color=muted, font=\scriptsize] at (148.5,105) {Schnittlinie};
+}
+
+\newcommand{\FineRule}[2]{%
+  \draw[gold, line width=0.25mm] (#1-16,#2) -- (#1-4,#2);
+  \draw[gold, line width=0.25mm] (#1+4,#2) -- (#1+16,#2);
+  \draw[gold, line width=0.22mm] (#1,#2) circle (1.05);
+  \draw[gold, line width=0.18mm] (#1+1,#2) .. controls (#1+3,#2+2) and (#1+5,#2+1) .. (#1+6,#2);
+  \draw[gold, line width=0.18mm] (#1-1,#2) .. controls (#1-3,#2+2) and (#1-5,#2+1) .. (#1-6,#2);
+}
+
+\newcommand{\LogoHeader}[2]{%
+  \node[anchor=north, inner sep=0pt] at (#1,#2)
+    {\includegraphics[width=19mm]{../public/images/logo.png}};
+  \node[anchor=north, text=aubergine, align=center, font=\fontsize{17}{20}\selectfont] at (#1,#2-22)
+    {\textls[160]{HYPNOSE R}};
+  \node[anchor=north, text=gold, align=center, font=\Sans{\fontsize{7.4}{9}\selectfont}] at (#1,#2-31)
+    {Runa Weiland \textperiodcentered{} Frankfurt-Heddernheim};
+  \FineRule{#1}{#2-38}
+}
+
+\newcommand{\SmallIcon}[3]{%
+  \fill[aubergine] (#1,#2) circle (4.7);
+  \draw[accent, line width=0.25mm] (#1,#2) circle (4.7);
+  \node[text=paperLight, font=\Sans{\fontsize{7.5}{9}\selectfont\bfseries}] at (#1,#2) {#3};
+}
+
+\newcommand{\ContactIcon}[3]{%
+  \fill[paperLight] (#1,#2) circle (4.4);
+  \draw[accent, line width=0.25mm] (#1,#2) circle (4.4);
+  \node[text=aubergine, font=\Sans{\fontsize{7.2}{8}\selectfont\bfseries}] at (#1,#2-0.1) {#3};
+}
+
+\newcommand{\StepItem}[5]{%
+  \fill[aubergine] (#1,#2) circle (5.2);
+  \draw[accent, line width=0.25mm] (#1,#2) circle (5.2);
+  \node[text=paperLight, font=\fontsize{8.8}{10}\selectfont\bfseries] at (#1,#2) {#3};
+  \fill[paperLight, opacity=0.92] (#1+14,#2-6.8) circle (8.8);
+  \draw[line, line width=0.25mm] (#1+14,#2-6.8) circle (8.8);
+  \begin{scope}[shift={(#1+14,#2-6.8)}]
+    #4
+  \end{scope}
+  \node[anchor=west, text width=43mm, align=left] at (#1+27,#2-1) {%
+    {\color{aubergine}\fontsize{9.4}{10.6}\selectfont\bfseries #5\par}
+  };
+}
+
+\newcommand{\IconChat}{%
+  \draw[aubergine, line width=0.28mm] (-4,-1.5) circle (2.1);
+  \draw[aubergine, line width=0.28mm] (2.4,-1.5) circle (2.1);
+  \draw[aubergine, line width=0.28mm] (-4,-5.5) -- (-4,-3.6);
+  \draw[aubergine, line width=0.28mm] (2.4,-5.5) -- (2.4,-3.6);
+  \draw[aubergine, line width=0.25mm, rounded corners=1mm] (-2.8,2.2) rectangle (4.8,5.8);
+  \draw[aubergine, line width=0.25mm] (0.5,2.2) -- (-0.5,0.7);
+}
+
+\newcommand{\IconTarget}{%
+  \draw[aubergine, line width=0.28mm] (0,0) circle (5.2);
+  \draw[aubergine, line width=0.28mm] (0,0) circle (3);
+  \draw[aubergine, line width=0.28mm] (0,0) circle (0.9);
+  \draw[aubergine, line width=0.28mm] (0,0) -- (5.5,5.5);
+  \draw[aubergine, line width=0.28mm] (4,5.6) -- (5.8,5.8) -- (5.6,4);
+}
+
+\newcommand{\IconCalm}{%
+  \draw[aubergine, line width=0.28mm] (0,3.7) circle (1.7);
+  \draw[aubergine, line width=0.28mm] (0,1.7) -- (0,-2);
+  \draw[aubergine, line width=0.28mm] (-5,-5) .. controls (-2,-2.5) and (2,-2.5) .. (5,-5);
+  \draw[aubergine, line width=0.28mm] (-3,0.4) .. controls (-1,1.6) and (1,1.6) .. (3,0.4);
+  \draw[aubergine, line width=0.22mm] (-6,2.8) -- (-4.4,2.2);
+  \draw[aubergine, line width=0.22mm] (6,2.8) -- (4.4,2.2);
+  \draw[aubergine, line width=0.22mm] (0,7) -- (0,5.8);
+}
+
+\newcommand{\FrontPanel}[2]{%
+  \begin{scope}[shift={(#1,#2)}]
+    \clip (0,0) rectangle (\PanelW,\PanelH);
+    \fill[paperLight] (0,0) rectangle (\PanelW,\PanelH);
+
+    % Papierwarmer Hintergrund mit organischen Markenflächen.
+    \path[fill=lavenderSoft, opacity=0.32]
+      (0,210) .. controls (13,201) and (14,182) .. (7,164)
+      .. controls (1,148) and (5,131) .. (0,117) -- cycle;
+    \draw[gold, line width=0.28mm]
+      (18,210) .. controls (8,190) and (12,176) .. (7,159)
+      .. controls (3,146) and (9,129) .. (0,118);
+
+    \path[fill=paper, opacity=0.92]
+      (0,0) -- (0,78)
+      .. controls (18,92) and (53,92) .. (73,70)
+      .. controls (93,48) and (95,15) .. (89,0) -- cycle;
+
+    \begin{scope}
+      \clip
+        (68,0) -- (148.5,0) -- (148.5,108)
+        .. controls (126,116) and (111,105) .. (95,88)
+        .. controls (80,72) and (72,68) .. (68,56) -- cycle;
+      \node[anchor=south east, inner sep=0pt] at (151,0)
+        {\includegraphics[height=124mm]{../public/images/studio-detail-placeholder.png}};
+      \fill[paperLight, opacity=0.18] (68,0) rectangle (148.5,112);
+    \end{scope}
+    \draw[gold, line width=0.28mm]
+      (68,56) .. controls (72,68) and (80,72) .. (95,88)
+      .. controls (111,105) and (126,116) .. (148.5,108);
+
+    \path[fill=paper, opacity=0.95]
+      (0,0) -- (0,80)
+      .. controls (19,89) and (47,86) .. (62,70)
+      .. controls (78,53) and (80,22) .. (73,0) -- cycle;
+
+    \LogoHeader{74.25}{198}
+
+    \node[anchor=north west, text width=95mm, align=left] at (18,144) {%
+      {\color{aubergine}\fontsize{25}{28}\selectfont Ruhe beginnt\\im Kopf.\par}
+    };
+    \FineRule{38}{99}
+    \node[anchor=north west, text width=62mm, align=left] at (18,91) {%
+      {\color{ink}\Sans{\fontsize{8.5}{11}\selectfont
+      Hypnose in Frankfurt-Heddernheim\\
+      für Entspannung und mentale\\
+      Regeneration. Persönliche Zielarbeit\\
+      ruhig geführt und in deinem Tempo.}\par}
+    };
+
+    \node[anchor=north west, text=aubergine, font=\fontsize{10.5}{12}\selectfont] at (14,66)
+      {Ich begleite dich bei:};
+    \foreach \y/\icon/\text in {
+      53/{01}/{Entspannung},
+      41/{02}/{Mentale Regeneration},
+      29/{03}/{Persönliche Zielarbeit},
+      17/{04}/{Zeit für dich}
+    }{
+      \SmallIcon{18}{\y}{\icon}
+      \draw[line, line width=0.18mm] (27,\y-4.9) -- (67,\y-4.9);
+      \node[anchor=west, text width=39mm, text=ink, font=\Sans{\fontsize{7.9}{9.3}\selectfont}] at (27,\y) {\text};
+    }
+
+    \fill[aubergine, rounded corners=2.5mm] (76,16) rectangle (131,32);
+    \draw[gold, line width=0.3mm, rounded corners=2.5mm] (76,16) rectangle (131,32);
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{8.6}{10}\selectfont\bfseries}] at (82,25.6)
+      {Erstgespräch};
+    \node[anchor=west, text=paper, font=\Sans{\fontsize{7.1}{8.2}\selectfont}] at (82,20.4)
+      {kostenlos \textperiodcentered{} 15 Minuten};
+
+    \fill[paperLight, rounded corners=2.5mm] (76,0.5) rectangle (131,14);
+    \draw[gold, line width=0.3mm, rounded corners=2.5mm] (76,0.5) rectangle (131,14);
+    \node[anchor=west, text=aubergine, font=\Sans{\fontsize{8.3}{9.6}\selectfont\bfseries}] at (82,8.6)
+      {Hypnose};
+    \node[anchor=west, text=ink, font=\Sans{\fontsize{7}{8.2}\selectfont}] at (82,4.2)
+      {60 Minuten \textperiodcentered{} 120 EUR};
+  \end{scope}
+}
+
+\newcommand{\BackPanel}[2]{%
+  \begin{scope}[shift={(#1,#2)}]
+    \clip (0,0) rectangle (\PanelW,\PanelH);
+    \fill[paperLight] (0,0) rectangle (\PanelW,\PanelH);
+
+    \path[fill=lavenderSoft, opacity=0.26]
+      (132,210) .. controls (118,196) and (126,179) .. (148.5,165)
+      -- (148.5,210) -- cycle;
+    \path[fill=paper, opacity=0.88]
+      (0,210) -- (0,143)
+      .. controls (22,151) and (43,146) .. (61,158)
+      .. controls (81,172) and (103,165) .. (123,180)
+      .. controls (137,190) and (140,202) .. (148.5,210) -- cycle;
+
+    \path[fill=aubergine]
+      (0,0) -- (0,47)
+      .. controls (29,42) and (58,43) .. (83,49)
+      .. controls (112,57) and (127,53) .. (148.5,48)
+      -- (148.5,0) -- cycle;
+    \draw[gold, line width=0.28mm]
+      (0,47) .. controls (29,42) and (58,43) .. (83,49)
+      .. controls (112,57) and (127,53) .. (148.5,48);
+    \path[fill=lavender, opacity=0.18]
+      (0,0) -- (0,39)
+      .. controls (34,34) and (52,36) .. (74,43)
+      .. controls (99,51) and (125,50) .. (148.5,43)
+      -- (148.5,0) -- cycle;
+
+    \begin{scope}
+      \clip (112,167) circle (23);
+      \node[anchor=center, inner sep=0pt] at (112,167)
+        {\includegraphics[height=51mm]{../public/images/runa-weiland-portrait.jpg}};
+    \end{scope}
+    \draw[paperLight, line width=1.2mm] (112,167) circle (23);
+    \draw[gold, line width=0.35mm] (112,167) circle (24.4);
+
+    \node[anchor=north, text width=70mm, text=aubergine, align=center, font=\fontsize{19}{22}\selectfont] at (51,194)
+      {Ruhig. Klar.\\In deinem Tempo.};
+    \FineRule{51}{151}
+    \node[anchor=north, text width=73mm, align=center] at (51,143) {%
+      {\color{ink}\Sans{\fontsize{8.2}{10.5}\selectfont
+      Jede Sitzung ist individuell. In einem geschützten Rahmen begleite ich dich Schritt für Schritt - vom ersten Gespräch bis zur ruhigen Nachbesprechung.}\par}
+    };
+
+    \node[anchor=west, text=aubergine, font=\fontsize{12}{14}\selectfont] at (20,113)
+      {So läuft eine Sitzung ab:};
+    \draw[gold, line width=0.25mm, dashed] (27,99) -- (27,64);
+
+    \StepItem{27}{99}{1}{\IconChat}{Kennenlernen\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Wir sprechen über dein Anliegen.}}}
+    \StepItem{27}{81}{2}{\IconTarget}{Ziel klären\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Wir stimmen den Fokus der Sitzung ab.}}}
+    \StepItem{27}{63}{3}{\IconCalm}{Geführte Hypnose\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Du wirst ruhig durch die Phase begleitet.}}}
+
+    \ContactIcon{18}{36}{W}
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{8}{9.5}\selectfont}] at (28,36)
+      {Website: \SiteUrl};
+    \ContactIcon{18}{24}{@}
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{8}{9.5}\selectfont}] at (28,24)
+      {E-Mail: info@hypnose-r.de};
+    \ContactIcon{18}{12}{O}
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{8}{9.5}\selectfont}] at (28,12)
+      {Ort: Alt-Heddernheim 43};
+
+    \draw[accent, line width=0.25mm] (99,12) -- (99,43);
+    \fill[paperLight, rounded corners=2mm] (111,15) rectangle (136,40);
+    \draw[accent, line width=0.4mm, rounded corners=2mm] (111,15) rectangle (136,40);
+    \node[anchor=center] at (123.5,27.5) {\qrcode[height=21mm]{\FullBookingUrl}};
+    \node[anchor=north, text=paperLight, align=center, font=\Sans{\fontsize{6.8}{8}\selectfont}] at (123.5,12.2)
+      {Termin scannen};
+
+    \node[anchor=west, text=paper, font=\Sans{\fontsize{5.7}{7}\selectfont}] at (8,4)
+      {Hinweis: Kein Ersatz für medizinische oder psychotherapeutische Behandlung.};
+  \end{scope}
+}
+
+\newcommand{\RenderSheet}[1]{%
+  \begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
+    \begin{scope}[shift={(current page.south west)}]
+      #1
+    \end{scope}
+  \end{tikzpicture}%
+  \null
+}
+
+\begin{document}
+\RenderSheet{\FrontPanel{0}{0}\FrontPanel{148.5}{0}\CutLine}
+\newpage
+\RenderSheet{\BackPanel{0}{0}\BackPanel{148.5}{0}\CutLine}
+\end{document}

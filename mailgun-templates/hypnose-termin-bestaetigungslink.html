@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Termin best&auml;tigen</title>
+  </head>
+  <body style="margin:0;background:#120f17;color:#f4f1e8;font-family:Arial,Helvetica,sans-serif;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#120f17;">
+      <tr>
+        <td align="center" style="padding:28px 14px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:680px;border:1px solid #433a50;background:#191522;border-radius:18px;overflow:hidden;">
+            <tr>
+              <td style="padding:34px 30px 20px;background:#241d30;border-bottom:1px solid #433a50;">
+                <p style="margin:0 0 10px;color:#d6a84f;font-size:12px;font-weight:700;text-transform:uppercase;">Hypnose R</p>
+                <h1 style="margin:0;color:#f4f1e8;font-family:Georgia,'Times New Roman',serif;font-size:34px;line-height:1.12;font-weight:400;">Bitte best&auml;tige deinen Termin</h1>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:24px 30px 10px;color:#f4f1e8;font-size:16px;line-height:1.7;">
+                <p style="margin:0 0 16px;">Hallo {{name}},</p>
+                <p style="margin:0 0 16px;">deine Reservierung ist bei mir angekommen. Bitte best&auml;tige den Termin &uuml;ber den Button unten. Erst danach ist der Termin verbindlich eingetragen.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 30px 22px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #433a50;border-radius:14px;overflow:hidden;background:#241d30;">
+                  <tr>
+                    <td style="padding:13px 16px;color:#cfc6dc;font-size:13px;">Terminart</td>
+                    <td style="padding:13px 16px;color:#f4f1e8;font-size:14px;font-weight:700;">{{service}}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:13px 16px;color:#cfc6dc;font-size:13px;border-top:1px solid #433a50;">Termin</td>
+                    <td style="padding:13px 16px;color:#f4f1e8;font-size:14px;font-weight:700;border-top:1px solid #433a50;">{{appointmentDate}} bis {{appointmentEnd}}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:13px 16px;color:#cfc6dc;font-size:13px;border-top:1px solid #433a50;">Ort</td>
+                    <td style="padding:13px 16px;color:#f4f1e8;font-size:14px;font-weight:700;border-top:1px solid #433a50;">{{address}}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:13px 16px;color:#cfc6dc;font-size:13px;border-top:1px solid #433a50;">Preis</td>
+                    <td style="padding:13px 16px;color:#f4f1e8;font-size:14px;font-weight:700;border-top:1px solid #433a50;">{{priceLabel}}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:13px 16px;color:#cfc6dc;font-size:13px;border-top:1px solid #433a50;">Best&auml;tigen bis</td>
+                    <td style="padding:13px 16px;color:#f4f1e8;font-size:14px;font-weight:700;border-top:1px solid #433a50;">{{expiresAtLabel}}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding:4px 30px 30px;">
+                <a href="{{confirmUrl}}" style="display:inline-block;background:#d6a84f;color:#120f17;text-decoration:none;font-size:15px;font-weight:800;padding:15px 22px;border-radius:8px;">Termin verbindlich best&auml;tigen</a>
+                <p style="margin:18px 0 0;color:#cfc6dc;font-size:14px;line-height:1.6;">Wenn du nicht bis dahin best&auml;tigst, wird die Reservierung automatisch storniert.</p>
+                <p style="margin:10px 0 0;color:#cfc6dc;font-size:13px;line-height:1.6;">Absagen kannst du ebenfalls &uuml;ber den Best&auml;tigungslink.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:22px 30px;background:#120f17;border-top:1px solid #433a50;color:#cfc6dc;font-size:13px;line-height:1.6;">
+                Hypnose R<br>
+                {{address}}<br>
+                <a href="{{confirmUrl}}" style="color:#d6a84f;word-break:break-word;">Link im Browser &ouml;ffnen</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

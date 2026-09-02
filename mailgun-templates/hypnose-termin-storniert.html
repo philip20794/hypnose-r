@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Termin storniert</title>
+  </head>
+  <body style="margin:0;background:#120f17;color:#f4f1e8;font-family:Arial,Helvetica,sans-serif;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#120f17;">
+      <tr>
+        <td align="center" style="padding:28px 14px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:680px;border:1px solid #433a50;background:#191522;border-radius:18px;overflow:hidden;">
+            <tr>
+              <td style="padding:34px 30px 20px;background:#241d30;border-bottom:1px solid #433a50;">
+                <p style="margin:0 0 10px;color:#d6a84f;font-size:12px;font-weight:700;text-transform:uppercase;">Hypnose R</p>
+                <h1 style="margin:0;color:#f4f1e8;font-family:Georgia,'Times New Roman',serif;font-size:34px;line-height:1.12;font-weight:400;">Deine Reservierung wurde storniert</h1>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:24px 30px 30px;color:#f4f1e8;font-size:16px;line-height:1.7;">
+                <p style="margin:0 0 16px;">Hallo {{name}},</p>
+                <p style="margin:0 0 16px;">deine Reservierung wurde storniert. Der Termin ist damit wieder freigegeben.</p>
+                <p style="margin:0 0 18px;color:#cfc6dc;font-size:14px;">{{cancellationReasonLabel}}</p>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #433a50;border-radius:14px;overflow:hidden;background:#241d30;">
+                  <tr><td style="padding:13px 16px;color:#cfc6dc;font-size:13px;">Terminart</td><td style="padding:13px 16px;color:#f4f1e8;font-size:14px;font-weight:700;">{{service}}</td></tr>
+                  <tr><td style="padding:13px 16px;color:#cfc6dc;font-size:13px;border-top:1px solid #433a50;">Termin</td><td style="padding:13px 16px;color:#f4f1e8;font-size:14px;font-weight:700;border-top:1px solid #433a50;">{{appointmentDate}} bis {{appointmentEnd}}</td></tr>
+                </table>
+                <p style="margin:20px 0 0;color:#cfc6dc;font-size:14px;line-height:1.6;">Du kannst jederzeit &uuml;ber die Website einen neuen freien Termin ausw&auml;hlen.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
