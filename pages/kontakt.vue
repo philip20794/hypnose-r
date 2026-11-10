@@ -90,7 +90,7 @@ import {
 const whatsappUrl = getWhatsappUrl()
 
 usePageSeo({
-  title: 'Kontakt und Anfahrt Hypnose Frankfurt',
+  title: 'Kontakt und Anfahrt zum Studio in Heddernheim',
   description:
     'Kontakt, WhatsApp, Adresse und Anfahrt für Hypnose R in Frankfurt-Heddernheim: Alt-Heddernheim 43, 60439 Frankfurt am Main.',
   path: '/kontakt',

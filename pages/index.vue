@@ -3,7 +3,7 @@
     <DsPageHero
       eyebrow=""
       title="Hypnose in Frankfurt"
-      description="Hypnose R bietet ruhige Hypnosesitzungen in Frankfurt-Heddernheim für Entspannung, mentale Regeneration und persönliche Zielarbeit. Für erste Fragen kannst du ein kostenloses Erstgespräch reservieren."
+      description="Erlebe ruhige Hypnosesitzungen in Frankfurt-Heddernheim – für Entspannung, mentale Regeneration und persönliche Zielarbeit. Oder einfach, um Hypnose kennenzulernen."
       :image="studioImage"
       image-alt="Hypnose-Studio in Frankfurt-Heddernheim"
       :image-width="1448"
@@ -25,11 +25,11 @@
         image-alt="Porträt von Runa Weiland"
         eyebrow="Über mich"
         :title="OWNER_NAME"
-        description="Ich bin 26 Jahre alt, ausgebildete Hypnotiseurin und begleite dich in meinem kleinen Studio in Frankfurt-Heddernheim mit einem ruhigen, klar geführten Ablauf."
+        description="Ich bin Runa Weiland, ausgebildete Hypnotiseurin. In meinem kleinen Studio in Frankfurt-Heddernheim nehme ich mir Zeit für deine Fragen und begleite dich ruhig und persönlich durch die Sitzung."
       >
         <DsIconList
           :items="[
-            'Jung, frisch und voller Energie',
+            'Persönliche Begleitung mit einem klaren, ruhigen Ablauf',
             'Kleines Studio für Hypnose in Frankfurt-Heddernheim',
           ]"
         />
@@ -41,10 +41,36 @@
       </DsMediaBlock>
     </DsSection>
 
+    <DsSection tone="compact" title="Wofür interessierst du dich?">
+      <DsCardGrid columns="three">
+        <NuxtLink to="/hypnose#entspannung" class="interest-link">
+          <DsCard
+            title="Entspannung erleben"
+            icon="spa"
+            description="Bewusst zur Ruhe kommen und sich Zeit für eine geführte Entspannung nehmen."
+          />
+        </NuxtLink>
+        <NuxtLink to="/hypnose" class="interest-link">
+          <DsCard
+            title="Hypnose kennenlernen"
+            icon="explore"
+            description="Erfahren, wie sich Hypnose anfühlen kann und was während einer Sitzung passiert."
+          />
+        </NuxtLink>
+        <NuxtLink to="/hypnose#zielarbeit" class="interest-link">
+          <DsCard
+            title="Persönliche Zielarbeit"
+            icon="track_changes"
+            description="Ein individuelles Anliegen in einer ruhigen, geführten Sitzung aufgreifen."
+          />
+        </NuxtLink>
+      </DsCardGrid>
+    </DsSection>
+
     <DsSection
       eyebrow="Meine Leistungen"
       title="Hypnose und Erstgespräch"
-      description="Du kannst zuerst telefonisch Fragen klären oder direkt eine Hypnose in Frankfurt-Heddernheim buchen."
+      description="Du kannst zuerst telefonisch Fragen klären oder direkt eine Hypnose in Frankfurt-Heddernheim buchen. Mein Angebot ist ausschließlich nicht-therapeutisch."
     >
       <OfferCards />
     </DsSection>
@@ -88,7 +114,7 @@ import {
 
 usePageSeo({
   title: 'Hypnose Frankfurt-Heddernheim',
-  description: SITE_DESCRIPTION,
+  description: 'Hypnose in Frankfurt-Heddernheim erleben: Entspannung, Hypnose kennenlernen und persönliche Zielarbeit. 60 Minuten vor Ort. Kostenloses Erstgespräch.',
   path: '/',
   image: studioImage,
   schema: [
@@ -98,7 +124,7 @@ usePageSeo({
       name: SITE_NAME,
       url: SITE_URL,
       description: SITE_DESCRIPTION,
-      image: `${SITE_URL}${studioImage}`,
+      image: toAbsoluteImageUrl(studioImage),
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Alt-Heddernheim 43',
@@ -112,3 +138,24 @@ usePageSeo({
   ],
 })
 </script>
+
+<style scoped>
+.interest-link {
+  display: block;
+  height: 100%;
+  border-radius: var(--ds-radius-md);
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.interest-link:hover :deep(.ds-card),
+.interest-link:focus-visible :deep(.ds-card) {
+  border-color: var(--ds-color-primary);
+}
+
+.interest-link:focus-visible {
+  outline: 2px solid var(--ds-color-primary);
+  outline-offset: 4px;
+}
+</style>

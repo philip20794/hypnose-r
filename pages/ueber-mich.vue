@@ -3,7 +3,7 @@
     <DsPageHeader
       eyebrow="Über mich"
       :title="OWNER_NAME"
-      description="Ich bin Runa Weiland, ausgebildete Hypnotiseurin, und biete Hypnose in meinem kleinen Studio in Frankfurt-Heddernheim an."
+      description="Ich bin Runa Weiland, ausgebildete Hypnotiseurin, und begleite dich in meinem kleinen Studio in Frankfurt-Heddernheim. Aktuell biete ich ausschließlich nicht-therapeutische Hypnose für Entspannung und persönliche Zielarbeit an."
     >
       <template #actions>
         <DsButton to="/termin-buchen" icon="chat">Erstgespräch buchen</DsButton>
@@ -19,7 +19,7 @@
       >
         <DsIconList
           :items="[
-            '26 Jahre alt, jung, frisch und voller Energie',
+            '26 Jahre alt',
             'In Ausbildung zur Heilpraktikerin für Psychotherapie',
             'Hypnosetherapeutin Master-Class-Fachausbildung: Schwerpunkt Traumatherapie',
             'Eigenes kleines Hypnose-Studio in Frankfurt-Heddernheim',
@@ -46,29 +46,18 @@
             Leidenschaft.
           </p>
           <p class="ds-section__copy">
-            Je tiefer ich in dieses Wissen eintauchte, desto mehr begeisterte mich die Arbeit
-            mit Hypnose. Ich begann, das Wissen förmlich aufzusaugen und erkannte immer mehr,
-            welches Potenzial diese Methode in sich trägt. Bis heute fasziniert mich die
-            Verbindung aus fundiertem Wissen, innerer Arbeit und der Möglichkeit, Menschen
-            auf ihrem persönlichen Weg zu begleiten.
+            Je mehr ich über Hypnose lernte, desto mehr interessierte mich die Möglichkeit,
+            Menschen auf ihrem persönlichen Weg zu begleiten. Bis heute fasziniert mich
+            die Verbindung aus Wissen, innerer Aufmerksamkeit und persönlichen Erfahrungen.
           </p>
           <p class="ds-section__copy">
-            Besonders erfüllend ist für mich der Moment, wenn ich sehe, dass meine Arbeit
-            einem Menschen wirklich weiterhelfen kann. Zu erleben, wie sich neue Perspektiven
-            eröffnen, innere Prozesse in Bewegung kommen und Veränderungen möglich werden,
-            schenkt auch mir unglaublich viel Energie und Motivation.
+            In meinen Sitzungen ist mir wichtig, Zeit für Fragen zu lassen und einen ruhigen,
+            überschaubaren Rahmen zu schaffen. Du kannst Hypnose aus Neugier kennenlernen,
+            bewusst entspannen oder dich mit einem persönlichen Ziel beschäftigen.
           </p>
           <p class="ds-section__copy">
-            Für mich ist Hypnose weit mehr als nur eine spannende Methode. Sie ist eine
-            Möglichkeit, Menschen auf einer tieferen Ebene zu begegnen und sie dabei zu
-            unterstützen, ihre eigenen Ressourcen und Lösungen wiederzuentdecken. Ich schätze
-            besonders, dass Hypnose einen direkten und zugleich individuellen Zugang zu
-            persönlichen Themen ermöglichen kann.
-          </p>
-          <p class="ds-section__copy">
-            Genau diese Verbindung aus Faszination, Wirksamkeit und der Freude daran,
-            Menschen ein Stück auf ihrem Weg begleiten zu dürfen, ist der Grund, warum
-            Hypnose heute ein so wichtiger Teil meiner Arbeit ist.
+            Ich begleite dich dabei persönlich und in deinem Tempo. Mein aktuelles Angebot
+            umfasst keine Behandlung psychischer oder körperlicher Erkrankungen.
           </p>
         </div>
         <ZoomableImage
@@ -113,9 +102,9 @@ import certificateImage from '~/assets/zertifikat-optimized.jpg'
 import { OWNER_NAME, PROFILE_IMAGE, SITE_NAME, SITE_URL } from '~/src/constants/site'
 
 usePageSeo({
-  title: `${OWNER_NAME} - Hypnose in Frankfurt`,
+  title: `${OWNER_NAME} – Über mich und mein Studio`,
   description:
-    'Mehr über Runa Weiland, ihre Hypnose-Ausbildung, ihr kleines Studio und den aktuellen Rahmen für Hypnose in Frankfurt-Heddernheim.',
+    'Lerne Runa Weiland, ihre Hypnose-Ausbildung und ihr Studio in Frankfurt-Heddernheim kennen. Aktuell ausschließlich nicht-therapeutische Hypnose.',
   path: '/ueber-mich',
   image: PROFILE_IMAGE,
   schema: {
@@ -123,7 +112,7 @@ usePageSeo({
     '@type': 'Person',
     name: OWNER_NAME,
     jobTitle: 'Hypnotiseurin',
-    image: `${SITE_URL}${PROFILE_IMAGE}`,
+    image: toAbsoluteImageUrl(PROFILE_IMAGE),
     worksFor: {
       '@type': 'ProfessionalService',
       name: SITE_NAME,

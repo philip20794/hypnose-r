@@ -32,9 +32,9 @@
 import BookingWidget from '~/components/BookingWidget.vue'
 
 usePageSeo({
-  title: 'Hypnose Termin buchen Frankfurt',
+  title: 'Termin für Hypnose oder Erstgespräch buchen',
   description:
-    'Hypnose Termin in Frankfurt-Heddernheim online reservieren: kostenloses Erstgespräch oder 60 Minuten Hypnose bei Hypnose R buchen.',
+    'Reserviere deinen Termin online: 60 Minuten Hypnose in Frankfurt-Heddernheim oder ein kostenloses telefonisches Erstgespräch. Bestätigung per E-Mail.',
   path: '/termin-buchen',
 })
 </script>

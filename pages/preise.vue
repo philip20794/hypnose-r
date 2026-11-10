@@ -39,9 +39,9 @@
 import { PRICE_ITEMS, SITE_URL } from '~/src/constants/site'
 
 usePageSeo({
-  title: 'Hypnose Preise Frankfurt',
+  title: 'Preise für Hypnose und Erstgespräch',
   description:
-    'Preise für Hypnose in Frankfurt-Heddernheim: kostenloses Erstgespräch und 60 Minuten Hypnose im Studio bei Hypnose R.',
+    '60 Minuten Hypnose für 120 € im Studio in Frankfurt-Heddernheim. Das telefonische Erstgespräch ist kostenlos. Alle Preise und Informationen zur Zahlung.',
   path: '/preise',
   schema: {
     '@context': 'https://schema.org',

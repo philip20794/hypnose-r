@@ -1413,9 +1413,11 @@ h3 {
 
   .ds-hero__inner {
     padding: 46px 0;
+    gap: 14px;
   }
 
   .ds-hero__copy {
+    font-size: 18px;
     line-height: 1.55;
   }
 
@@ -1673,7 +1675,7 @@ h3 {
   }
 
   .ds-hero__inner {
-    padding: 38px 0 42px;
+    padding: 32px 0 34px;
   }
 
   .ds-actions {

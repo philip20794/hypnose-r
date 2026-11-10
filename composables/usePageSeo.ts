@@ -11,7 +11,7 @@ type PageSeoInput = {
 
 export function usePageSeo(input: PageSeoInput) {
   const canonical = input.path === '/' ? `${SITE_URL}/` : `${SITE_URL}${input.path}`
-  const image = `${SITE_URL}${input.image || SOCIAL_IMAGE}`
+  const image = toAbsoluteImageUrl(input.image || SOCIAL_IMAGE)
   const title = input.title.includes(SITE_NAME) ? input.title : `${input.title} | ${SITE_NAME}`
 
   useSeoMeta({
@@ -23,6 +23,7 @@ export function usePageSeo(input: PageSeoInput) {
     ogUrl: canonical,
     ogImage: image,
     twitterCard: 'summary_large_image',
+    twitterImage: image,
   })
 
   useHead({
