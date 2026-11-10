@@ -21,7 +21,7 @@
     <p>
       Absage oder Umbuchung ist bis 48 Stunden vor dem Termin kostenfrei möglich.
       Für spätere Absagen und Nichterscheinen gelten die jeweils vereinbarten
-      Termin- und Behandlungsbedingungen.
+      Termin- und Sitzungsbedingungen.
     </p>
   </DsLegalDocument>
 </template>

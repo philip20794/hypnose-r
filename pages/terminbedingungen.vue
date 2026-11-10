@@ -1,13 +1,13 @@
 <template>
   <DsLegalDocument
-    title="Termin- und Behandlungsbedingungen"
-    description="Bedingungen f&uuml;r Terminanfrage, Hypnose, Behandlung, Absage, Honorar und Widerruf bei Hypnose R."
+    title="Termin- und Sitzungsbedingungen"
+    description="Bedingungen f&uuml;r Terminanfrage, Hypnose, Absage, Honorar und Widerruf bei Hypnose R."
   >
     <h2>1. Anbieterin</h2>
     <p>Anbieterin der Leistungen ist:</p>
     <p>
       Runa Weiland<br>
-      Heilpraktikerin, beschr&auml;nkt auf das Gebiet der Psychotherapie<br>
+      In Ausbildung zur Heilpraktikerin f&uuml;r Psychotherapie<br>
       handelnd unter &bdquo;Hypnose R&ldquo;<br>
       Alt-Heddernheim 43<br>
       60439 Frankfurt am Main
@@ -17,38 +17,31 @@
       E-Mail:
       <a href="mailto:info@hypnose-r.de">info@hypnose-r.de</a>
     </p>
-    <p>Die Heilpraktikererlaubnis ist auf das Gebiet der Psychotherapie beschr&auml;nkt.</p>
 
     <h2>2. Geltungsbereich</h2>
     <p>
-      Diese Termin- und Behandlungsbedingungen gelten f&uuml;r kostenlose Erstgespr&auml;che
-      sowie f&uuml;r psychotherapeutische Behandlungen und Hypnosesitzungen.
+      Diese Termin- und Sitzungsbedingungen gelten f&uuml;r kostenlose Erstgespr&auml;che
+      sowie f&uuml;r nichtmedizinische Hypnosesitzungen.
     </p>
     <p>
       Das Angebot richtet sich ausschlie&szlig;lich an vollj&auml;hrige und
       einwilligungsf&auml;hige Personen.
     </p>
 
-    <h2>3. Art der Behandlung</h2>
+    <h2>3. Art der Hypnose</h2>
     <p>
-      Angeboten werden psychotherapeutische Behandlungen unter Einsatz von Hypnose sowie
-      Hypnosesitzungen zur Entspannung und F&ouml;rderung des pers&ouml;nlichen
+      Angeboten werden nichtmedizinische Hypnosesitzungen zur Entspannung und F&ouml;rderung des pers&ouml;nlichen
       Wohlbefindens.
     </p>
     <p>
-      Therapeutische Hypnose kann insbesondere zur Behandlung psychischer Beschwerden
-      eingesetzt werden, soweit die Behandlung innerhalb der erteilten
-      Heilpraktikererlaubnis liegt und nach fachlicher Einsch&auml;tzung verantwortbar ist.
-    </p>
-    <p>
-      Vor Beginn einer therapeutischen Behandlung werden das Anliegen, die voraussichtliche
-      Vorgehensweise, m&ouml;gliche Behandlungsalternativen sowie wesentliche Chancen und
-      Risiken besprochen. Eine Behandlung erfolgt erst nach entsprechender Aufkl&auml;rung
+      Vor Beginn einer Hypnosesitzung werden das Anliegen, die voraussichtliche
+      Vorgehensweise, m&ouml;gliche Alternativen sowie wesentliche Chancen und
+      Risiken besprochen. Eine Sitzung erfolgt erst nach entsprechender Aufkl&auml;rung
       und Einwilligung.
     </p>
     <p>
-      Eine bestimmte Wirkung oder ein bestimmter Behandlungserfolg wird nicht geschuldet.
-      Verlauf und Wirkung einer Hypnose oder psychotherapeutischen Behandlung k&ouml;nnen
+      Eine bestimmte Wirkung oder ein bestimmter Erfolg wird nicht geschuldet.
+      Verlauf und Wirkung einer Hypnose k&ouml;nnen
       individuell unterschiedlich sein.
     </p>
 
@@ -64,7 +57,7 @@
     <p>
       Die Praxis ist keine psychiatrische oder psychotherapeutische Notfallstelle. Bei
       akuten psychiatrischen Krisen, akuter Selbst- oder Fremdgef&auml;hrdung oder anderen
-      medizinischen Notf&auml;llen ist eine Behandlung im Rahmen eines regul&auml;ren
+      medizinischen Notf&auml;llen ist eine Sitzung im Rahmen eines regul&auml;ren
       Hypnosetermins nicht geeignet. In solchen F&auml;llen m&uuml;ssen die zust&auml;ndigen
       &auml;rztlichen oder psychiatrischen Notfalldienste in Anspruch genommen werden.
     </p>
@@ -76,10 +69,10 @@
     </p>
     <p>
       Das Absenden des Formulars stellt noch keine verbindliche Buchung und noch keinen
-      Abschluss eines Behandlungsvertrags dar.
+      Abschluss eines Vertrags dar.
     </p>
     <p>
-      Nach Eingang der Anfrage erh&auml;ltst du eine E-Mail. Ein Behandlungsvertrag kommt
+      Nach Eingang der Anfrage erh&auml;ltst du eine E-Mail. Ein Vertrag kommt
       erst zustande, wenn der angefragte Termin ausdr&uuml;cklich per E-Mail best&auml;tigt
       wurde.
     </p>
@@ -93,7 +86,7 @@
     <p>Das kostenlose telefonische Erstgespr&auml;ch dauert ungef&auml;hr 15 Minuten.</p>
     <p>
       Es dient dazu, offene Fragen zu beantworten, das Anliegen grob einzuordnen und zu
-      pr&uuml;fen, ob das angebotene Behandlungsverfahren grunds&auml;tzlich geeignet
+      pr&uuml;fen, ob das angebotene Hypnoseverfahren grunds&auml;tzlich geeignet
       erscheint.
     </p>
     <p>
@@ -102,9 +95,9 @@
       zur Buchung einer kostenpflichtigen Sitzung.
     </p>
     <p>
-      Wenn sich bereits im Erstgespr&auml;ch ergibt, dass eine Behandlung nicht angeboten
+      Wenn sich bereits im Erstgespr&auml;ch ergibt, dass eine Sitzung nicht angeboten
       werden kann oder eine andere fachliche oder medizinische Versorgung geeigneter
-      erscheint, kann die weitere Behandlung abgelehnt werden.
+      erscheint, kann die weitere Sitzung abgelehnt werden.
     </p>
 
     <h2>7. Dauer der Sitzungen</h2>
@@ -118,24 +111,24 @@
     </p>
 
     <h2>8. Mitwirkung und Angaben zur Gesundheit</h2>
-    <p>Eine psychotherapeutische Behandlung erfordert eine vertrauensvolle Zusammenarbeit.</p>
+    <p>Eine Hypnosesitzung erfordert eine vertrauensvolle Zusammenarbeit.</p>
     <p>
       Du bist verpflichtet, alle Angaben wahrheitsgem&auml;&szlig; und vollst&auml;ndig
-      mitzuteilen, die f&uuml;r die Beurteilung und sichere Durchf&uuml;hrung der Behandlung
+      mitzuteilen, die f&uuml;r die Beurteilung und sichere Durchf&uuml;hrung der Sitzung
       erheblich sein k&ouml;nnen. Dazu k&ouml;nnen insbesondere bestehende psychische oder
       k&ouml;rperliche Erkrankungen, laufende &auml;rztliche oder psychotherapeutische
       Behandlungen sowie die Einnahme von Medikamenten geh&ouml;ren.
     </p>
     <p>
-      &Auml;nderungen, die f&uuml;r die Behandlung von Bedeutung sein k&ouml;nnen, sollen
+      &Auml;nderungen, die f&uuml;r die Sitzung von Bedeutung sein k&ouml;nnen, sollen
       vor der n&auml;chsten Sitzung mitgeteilt werden.
     </p>
     <p>
-      Eine Behandlung unter dem Einfluss von Alkohol, Drogen oder anderen berauschenden
+      Eine Sitzung unter dem Einfluss von Alkohol, Drogen oder anderen berauschenden
       Substanzen ist nicht m&ouml;glich.
     </p>
     <p>
-      Die Behandlung kann abgelehnt, unterbrochen oder beendet werden, wenn eine sichere
+      Die Sitzung kann abgelehnt, unterbrochen oder beendet werden, wenn eine sichere
       oder fachlich verantwortbare Durchf&uuml;hrung nicht gew&auml;hrleistet erscheint.
     </p>
 
@@ -145,14 +138,14 @@
       Terminbest&auml;tigung aufgef&uuml;hrt wird.
     </p>
     <p>
-      Die Behandlung erfolgt grunds&auml;tzlich als Selbstzahlerleistung. Die Verg&uuml;tung
+      Die Sitzung erfolgt grunds&auml;tzlich als Selbstzahlerleistung. Die Verg&uuml;tung
       ist unabh&auml;ngig davon zu zahlen, ob eine private Krankenversicherung,
       Beihilfestelle, Zusatzversicherung oder eine andere Stelle die Kosten vollst&auml;ndig,
       teilweise oder &uuml;berhaupt nicht &uuml;bernimmt.
     </p>
     <p>
       Du bist selbst daf&uuml;r verantwortlich, eine m&ouml;gliche Kostenerstattung vor
-      Beginn der Behandlung mit der jeweiligen Versicherung oder Erstattungsstelle zu
+      Beginn der Sitzung mit der jeweiligen Versicherung oder Erstattungsstelle zu
       kl&auml;ren.
     </p>
     <p>
@@ -162,7 +155,7 @@
     <p>Eine Zahlung &uuml;ber die Website findet nicht statt.</p>
 
     <h2>10. Absage und Umbuchung</h2>
-    <p>Jeder Behandlungstermin wird ausschlie&szlig;lich f&uuml;r die betreffende Person freigehalten.</p>
+    <p>Jeder Hypnosetermin wird ausschlie&szlig;lich f&uuml;r die betreffende Person freigehalten.</p>
     <p>
       Eine Absage oder Bitte um Umbuchung soll per E-Mail erfolgen. Ma&szlig;geblich ist
       der Zeitpunkt des Eingangs der Nachricht.
@@ -221,9 +214,9 @@
     </p>
     <p>Weitergehende gesetzliche Anspr&uuml;che bleiben unber&uuml;hrt.</p>
 
-    <h2>13. Beendigung der Behandlung</h2>
+    <h2>13. Beendigung der Sitzung</h2>
     <p>
-      Du kannst die Behandlung jederzeit beenden. Bereits erbrachte Behandlungsleistungen
+      Du kannst die Sitzung jederzeit beenden. Bereits erbrachte Hypnoseleistungen
       sind entsprechend der getroffenen Vereinbarung zu verg&uuml;ten.
     </p>
     <p>
@@ -231,8 +224,8 @@
       Termine gelten die Regelungen zur Absage und zum Ausfallhonorar.
     </p>
     <p>
-      Auch die Anbieterin kann die Behandlung beenden, wenn das notwendige
-      Vertrauensverh&auml;ltnis nicht mehr besteht, eine Behandlung fachlich nicht mehr
+      Auch die Anbieterin kann die Sitzung beenden, wenn das notwendige
+      Vertrauensverh&auml;ltnis nicht mehr besteht, eine Sitzung fachlich nicht mehr
       verantwortbar erscheint oder eine andere Form der Versorgung erforderlich ist.
     </p>
     <p>
@@ -241,7 +234,7 @@
     </p>
 
     <h2>14. Vertraulichkeit</h2>
-    <p>Personenbezogene Angaben und Behandlungsinhalte werden vertraulich behandelt.</p>
+    <p>Personenbezogene Angaben und Sitzungsinhalte werden vertraulich behandelt.</p>
     <p>
       Eine Weitergabe an andere Personen oder Stellen erfolgt nur mit deiner
       ausdr&uuml;cklichen Zustimmung oder wenn eine gesetzliche Verpflichtung oder eine
@@ -261,16 +254,16 @@
     <p>
       E-Mails sind grunds&auml;tzlich nicht f&uuml;r die &Uuml;bermittlung ausf&uuml;hrlicher
       Diagnosen, Befunde, Krankengeschichten oder anderer besonders vertraulicher
-      Behandlungsinformationen vorgesehen.
+      Gesundheitsinformationen vorgesehen.
     </p>
 
     <h2>16. Gesetzliches Widerrufsrecht</h2>
     <p>
-      Wird der Behandlungsvertrag ausschlie&szlig;lich &uuml;ber Fernkommunikationsmittel,
+      Wird der Vertrag ausschlie&szlig;lich &uuml;ber Fernkommunikationsmittel,
       insbesondere &uuml;ber die Website und per E-Mail, geschlossen, steht Verbrauchern
       grunds&auml;tzlich ein gesetzliches Widerrufsrecht zu.
     </p>
-    <p>Die folgende Widerrufsbelehrung ist Bestandteil dieser Termin- und Behandlungsbedingungen.</p>
+    <p>Die folgende Widerrufsbelehrung ist Bestandteil dieser Termin- und Sitzungsbedingungen.</p>
 
     <h2>Widerrufsbelehrung</h2>
 
@@ -314,9 +307,9 @@
       R&uuml;ckzahlung werden keine Entgelte berechnet.
     </p>
 
-    <h3>Beginn der Behandlung w&auml;hrend der Widerrufsfrist</h3>
+    <h3>Beginn der Sitzung w&auml;hrend der Widerrufsfrist</h3>
     <p>
-      Hast du ausdr&uuml;cklich verlangt, dass die Behandlung bereits w&auml;hrend der
+      Hast du ausdr&uuml;cklich verlangt, dass die Sitzung bereits w&auml;hrend der
       14-t&auml;gigen Widerrufsfrist beginnen soll, musst du bei einem Widerruf einen
       angemessenen Betrag f&uuml;r die bis zum Widerruf bereits erbrachten Leistungen zahlen.
     </p>
@@ -326,10 +319,10 @@
     </p>
     <p>
       Das Widerrufsrecht erlischt bei vollst&auml;ndiger Erbringung der vereinbarten
-      Dienstleistung nur, wenn du vor Beginn der Behandlung
+      Dienstleistung nur, wenn du vor Beginn der Sitzung
     </p>
     <ul>
-      <li>ausdr&uuml;cklich zugestimmt hast, dass mit der Behandlung vor Ablauf der Widerrufsfrist begonnen wird, und</li>
+      <li>ausdr&uuml;cklich zugestimmt hast, dass mit der Sitzung vor Ablauf der Widerrufsfrist begonnen wird, und</li>
       <li>best&auml;tigt hast, dass dir bekannt ist, dass dein Widerrufsrecht bei vollst&auml;ndiger Vertragserf&uuml;llung erlischt.</li>
     </ul>
 
@@ -362,8 +355,8 @@
 
 <script setup lang="ts">
 usePageSeo({
-  title: 'Termin- und Behandlungsbedingungen Hypnose R Frankfurt',
-  description: 'Termin- und Behandlungsbedingungen für Erstgespräch, Hypnose, Absage, Honorar und Widerruf bei Hypnose R in Frankfurt.',
+  title: 'Termin- und Sitzungsbedingungen Hypnose R Frankfurt',
+  description: 'Termin- und Sitzungsbedingungen für Erstgespräch, Hypnose, Absage, Honorar und Widerruf bei Hypnose R in Frankfurt.',
   path: '/terminbedingungen',
 })
 </script>

@@ -70,7 +70,7 @@
           <p class="legal-consent">
             Mit der verbindlichen Bestätigung stimmst du den
             <NuxtLink to="/terminbedingungen" target="_blank">
-              Termin- und Behandlungsbedingungen
+              Termin- und Sitzungsbedingungen
             </NuxtLink>
             und der
             <NuxtLink to="/datenschutz" target="_blank">

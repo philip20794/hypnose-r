@@ -3,14 +3,14 @@
   <p>
     Diese Datenschutzerkl&auml;rung informiert dar&uuml;ber, welche personenbezogenen Daten
     beim Besuch dieser Website, bei einer Terminanfrage, bei der Kommunikation und im
-    Rahmen einer psychotherapeutischen Behandlung verarbeitet werden.
+    Rahmen einer nichtmedizinischen Hypnosesitzung verarbeitet werden.
   </p>
 
   <h2>1. Verantwortliche</h2>
   <p>Verantwortlich f&uuml;r die Datenverarbeitung ist:</p>
   <p>
     Runa Weiland<br>
-    Heilpraktikerin, beschr&auml;nkt auf das Gebiet der Psychotherapie<br>
+    In Ausbildung zur Heilpraktikerin f&uuml;r Psychotherapie<br>
     handelnd unter &bdquo;Hypnose R&ldquo;<br>
     Alt-Heddernheim 43<br>
     60439 Frankfurt am Main
@@ -30,7 +30,7 @@
   <p>
     Angaben &uuml;ber die k&ouml;rperliche oder psychische Gesundheit geh&ouml;ren zu den
     besonders gesch&uuml;tzten personenbezogenen Daten. Bereits die Information, dass eine
-    Person eine psychotherapeutische Behandlung oder einen entsprechenden Termin anfragt,
+    Person eine nichtmedizinische Hypnosesitzung oder einen entsprechenden Termin anfragt,
     kann R&uuml;ckschl&uuml;sse auf ihre Gesundheit erm&ouml;glichen.
   </p>
   <p>Es werden nur solche Daten verarbeitet, die f&uuml;r den jeweiligen Zweck erforderlich sind.</p>
@@ -81,7 +81,7 @@
   <p>
     F&uuml;r die &ouml;ffentliche Anzeige werden ausschlie&szlig;lich verf&uuml;gbare oder
     nicht verf&uuml;gbare Zeitr&auml;ume verarbeitet. Namen, Kontaktdaten,
-    Behandlungsgr&uuml;nde und andere Daten bereits eingetragener Patientinnen und Patienten
+    Sitzungsanl&auml;sse und andere Daten bereits eingetragener Kundinnen und Kunden
     werden nicht &ouml;ffentlich angezeigt.
   </p>
   <p>
@@ -110,30 +110,30 @@
   <p>
     Die Daten werden verarbeitet, um die Anfrage entgegenzunehmen, den Termin zu
     pr&uuml;fen, R&uuml;ckfragen zu beantworten, den Termin zu best&auml;tigen, umzubuchen
-    oder abzusagen und einen sp&auml;teren Behandlungsvertrag vorzubereiten.
+    oder abzusagen und einen sp&auml;teren Vertrag vorzubereiten.
   </p>
   <p>
     Rechtsgrundlage f&uuml;r die Verarbeitung gew&ouml;hnlicher personenbezogener Daten ist
     Artikel 6 Absatz 1 Buchstabe b DSGVO. Die Verarbeitung ist zur Durchf&uuml;hrung
     vorvertraglicher Ma&szlig;nahmen beziehungsweise zur Erf&uuml;llung eines
-    Behandlungsvertrags erforderlich.
+    Vertrags erforderlich.
   </p>
   <p>Ohne die als Pflichtfelder gekennzeichneten Angaben kann die Terminanfrage nicht bearbeitet werden.</p>
 
   <h2>6. Gesundheitsdaten und ausdr&uuml;ckliche Einwilligung</h2>
   <p>
-    Im Zusammenhang mit einer psychotherapeutischen Terminanfrage oder Behandlung k&ouml;nnen
+    Im Zusammenhang mit einer Terminanfrage oder Hypnosesitzung k&ouml;nnen
     Gesundheitsdaten verarbeitet werden.
   </p>
   <p>Dazu k&ouml;nnen insbesondere geh&ouml;ren:</p>
   <ul>
-    <li>die Information, dass eine psychotherapeutische Behandlung angefragt oder durchgef&uuml;hrt wird</li>
+    <li>die Information, dass eine nichtmedizinische Hypnosesitzung angefragt oder durchgef&uuml;hrt wird</li>
     <li>Angaben zum psychischen oder k&ouml;rperlichen Gesundheitszustand</li>
     <li>Beschwerden und Symptome</li>
     <li>Diagnosen und Verdachtsdiagnosen</li>
     <li>Angaben zu fr&uuml;heren oder laufenden Behandlungen</li>
     <li>Angaben zu Medikamenten</li>
-    <li>Behandlungsziele</li>
+    <li>Sitzungsziele</li>
     <li>freiwillige Angaben in Nachrichten oder Gespr&auml;chen</li>
   </ul>
   <p>
@@ -146,8 +146,8 @@
   </p>
   <p>
     Die Einwilligung wird vor der Verarbeitung entsprechender Gesundheitsdaten eingeholt.
-    Sie ist freiwillig. Ohne die Verarbeitung der f&uuml;r die Behandlung erforderlichen
-    Gesundheitsdaten kann eine psychotherapeutische Behandlung jedoch nicht begonnen oder
+    Sie ist freiwillig. Ohne die Verarbeitung der f&uuml;r die Sitzung erforderlichen
+    Gesundheitsdaten kann eine nichtmedizinische Hypnosesitzung jedoch nicht begonnen oder
     fortgef&uuml;hrt werden.
   </p>
   <p>
@@ -162,25 +162,25 @@
     ben&ouml;tigt werden.
   </p>
 
-  <h2>7. Psychotherapeutische Behandlung und Behandlungsakte</h2>
+  <h2>7. Hypnosesitzungen und Sitzungsdokumentation</h2>
   <p>
-    Im Rahmen einer Behandlung werden die aus fachlicher und rechtlicher Sicht
-    erforderlichen Angaben verarbeitet und in einer Behandlungsakte dokumentiert.
+    Im Rahmen einer Hypnosesitzung werden die aus fachlicher und rechtlicher Sicht
+    erforderlichen Angaben verarbeitet und in einer Sitzungsdokumentation dokumentiert.
   </p>
   <p>Dazu k&ouml;nnen insbesondere geh&ouml;ren:</p>
   <ul>
     <li>Anamnese</li>
-    <li>Beschwerden und Behandlungsanlass</li>
-    <li>Diagnosen und Befunde</li>
-    <li>Behandlungsziele</li>
-    <li>durchgef&uuml;hrte therapeutische Ma&szlig;nahmen</li>
-    <li>Verlauf und Ergebnisse der Behandlung</li>
+    <li>Beschwerden und Sitzungsanlass</li>
+    <li>mitgeteilte Diagnosen und Befunde</li>
+    <li>Sitzungsziele</li>
+    <li>durchgef&uuml;hrte Hypnose&uuml;bungen</li>
+    <li>Verlauf und Ergebnisse der Sitzung</li>
     <li>wesentliche Wirkungen und Reaktionen</li>
     <li>Aufkl&auml;rungen und Einwilligungen</li>
     <li>relevante Kommunikation</li>
     <li>vereinbarte weitere Ma&szlig;nahmen</li>
   </ul>
-  <p>Die Verarbeitung erfolgt zur Durchf&uuml;hrung und Dokumentation des Behandlungsverh&auml;ltnisses.</p>
+  <p>Die Verarbeitung erfolgt zur Durchf&uuml;hrung und Dokumentation des Vertragsverh&auml;ltnisses.</p>
   <p>
     Rechtsgrundlagen sind Artikel 6 Absatz 1 Buchstabe b DSGVO und, hinsichtlich der
     Gesundheitsdaten, deine ausdr&uuml;ckliche Einwilligung nach Artikel 9 Absatz 2
@@ -194,7 +194,7 @@
     von Artikel 9 Absatz 2 Buchstabe f DSGVO.
   </p>
   <p>
-    Die Behandlungsakte wird grunds&auml;tzlich zehn Jahre nach Abschluss der Behandlung
+    Die Sitzungsdokumentation wird grunds&auml;tzlich zehn Jahre nach Abschluss der Sitzung
     aufbewahrt. Eine l&auml;ngere Aufbewahrung erfolgt nur, wenn eine andere gesetzliche
     Verpflichtung besteht oder dies im Einzelfall zur Wahrung rechtlicher Anspr&uuml;che
     erforderlich ist.
@@ -245,13 +245,13 @@
   </ul>
   <p>
     Die Verarbeitung erfolgt zur Bearbeitung der Terminanfrage sowie zur Durchf&uuml;hrung
-    und Organisation des Behandlungsvertrags.
+    und Organisation des Vertrags.
   </p>
   <p>Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO.</p>
   <p>
     Best&auml;tigungs-E-Mails werden auf die organisatorisch erforderlichen Angaben
     beschr&auml;nkt. Diagnosen, ausf&uuml;hrliche Beschwerden oder andere detaillierte
-    Behandlungsinformationen werden nicht in Terminbest&auml;tigungen aufgenommen.
+    Gesundheitsinformationen werden nicht in Terminbest&auml;tigungen aufgenommen.
   </p>
   <p>
     Bei einer gew&ouml;hnlichen E-Mail kann nicht vollst&auml;ndig ausgeschlossen werden,
@@ -267,7 +267,7 @@
     Kontaktdaten und der Inhalt deiner Anfrage verarbeitet.
   </p>
   <p>
-    Dient die Kontaktaufnahme der Anbahnung oder Durchf&uuml;hrung einer Behandlung, ist
+    Dient die Kontaktaufnahme der Anbahnung oder Durchf&uuml;hrung einer Hypnosesitzung, ist
     Rechtsgrundlage Artikel 6 Absatz 1 Buchstabe b DSGVO.
   </p>
   <p>
@@ -282,7 +282,7 @@
   <h2>11. Auftragsverarbeiter und Empf&auml;nger</h2>
   <p>
     Personenbezogene Daten werden nur weitergegeben, wenn dies f&uuml;r den Betrieb der
-    Website, die Terminverwaltung, die Kommunikation, die Durchf&uuml;hrung der Behandlung
+    Website, die Terminverwaltung, die Kommunikation, die Durchf&uuml;hrung der Sitzung
     oder die Erf&uuml;llung gesetzlicher Pflichten erforderlich ist.
   </p>
   <p>Als Empf&auml;nger oder Auftragsverarbeiter kommen insbesondere in Betracht:</p>
@@ -315,7 +315,7 @@
     oder vergleichbare Trackingdienste eingesetzt.
   </p>
   <p>
-    Die bei der Terminbuchung und Behandlung erhobenen Daten werden nicht zur Erstellung
+    Die bei der Terminbuchung und Hypnosesitzung erhobenen Daten werden nicht zur Erstellung
     von Werbeprofilen verwendet.
   </p>
   <p>Eine Weitergabe oder ein Verkauf personenbezogener Daten zu Werbezwecken erfolgt nicht.</p>
@@ -329,9 +329,9 @@
   <ul>
     <li>Nicht best&auml;tigte Terminanfragen und allgemeine Anfragen werden grunds&auml;tzlich sp&auml;testens sechs Monate nach Abschluss der Bearbeitung gel&ouml;scht.</li>
     <li>Daten eines best&auml;tigten Termins werden gespeichert, solange dies f&uuml;r die Vorbereitung, Durchf&uuml;hrung und Abrechnung des Termins erforderlich ist.</li>
-    <li>Behandlungsakten werden grunds&auml;tzlich zehn Jahre nach Abschluss der Behandlung aufbewahrt.</li>
-    <li>Behandlungsrelevante E-Mails und sonstige behandlungsrelevante Kommunikation k&ouml;nnen als Bestandteil der Behandlungsdokumentation ebenfalls zehn Jahre aufbewahrt werden.</li>
-    <li>Nicht behandlungsrelevante Kommunikation wird grunds&auml;tzlich sp&auml;testens sechs Monate nach Abschluss der Bearbeitung gel&ouml;scht.</li>
+    <li>Sitzungsdokumentationen werden grunds&auml;tzlich zehn Jahre nach Abschluss der Sitzung aufbewahrt.</li>
+    <li>Sitzungsrelevante E-Mails und sonstige sitzungsrelevante Kommunikation k&ouml;nnen als Bestandteil der Sitzungsdokumentation ebenfalls zehn Jahre aufbewahrt werden.</li>
+    <li>Nicht sitzungsrelevante Kommunikation wird grunds&auml;tzlich sp&auml;testens sechs Monate nach Abschluss der Bearbeitung gel&ouml;scht.</li>
     <li>Einwilligungsnachweise werden so lange aufbewahrt, wie dies zum Nachweis der Rechtm&auml;&szlig;igkeit der Verarbeitung erforderlich ist.</li>
     <li>Daten, die gesetzlichen steuerlichen oder handelsrechtlichen Aufbewahrungspflichten unterliegen, werden f&uuml;r die jeweils gesetzlich vorgeschriebene Dauer gespeichert.</li>
     <li>Technische Protokolldaten werden gel&ouml;scht, sobald sie f&uuml;r Betrieb, Sicherheit und Fehleranalyse nicht mehr erforderlich sind.</li>
@@ -349,7 +349,7 @@
   </p>
   <p>Die Website wird verschl&uuml;sselt &uuml;ber HTTPS &uuml;bertragen.</p>
   <p>
-    Zugriffe auf Termin- und Behandlungsdaten werden auf die Personen beschr&auml;nkt, die
+    Zugriffe auf Termin- und Sitzungsdaten werden auf die Personen beschr&auml;nkt, die
     diese Daten f&uuml;r die Erf&uuml;llung ihrer Aufgaben ben&ouml;tigen.
   </p>
 
@@ -367,7 +367,7 @@
   </ul>
   <p>
     Unabh&auml;ngig von den datenschutzrechtlichen Rechten kannst du im Rahmen der
-    gesetzlichen Voraussetzungen Einsicht in deine Behandlungsakte und eine Abschrift der
+    gesetzlichen Voraussetzungen Einsicht in deine Sitzungsdokumentation und eine Abschrift der
     Akte verlangen.
   </p>
   <p>Zur Aus&uuml;bung deiner Rechte kannst du dich an die unter Abschnitt 1 genannten Kontaktdaten wenden.</p>
@@ -392,8 +392,8 @@
   </p>
   <p>Durch den Widerruf wird die Rechtm&auml;&szlig;igkeit der bis zum Widerruf erfolgten Verarbeitung nicht ber&uuml;hrt.</p>
   <p>
-    Soweit eine psychotherapeutische Behandlung ohne die Verarbeitung der erforderlichen
-    Gesundheitsdaten nicht fachgerecht durchgef&uuml;hrt werden kann, kann die Behandlung
+    Soweit eine nichtmedizinische Hypnosesitzung ohne die Verarbeitung der erforderlichen
+    Gesundheitsdaten nicht fachgerecht durchgef&uuml;hrt werden kann, kann die Sitzung
     nach dem Widerruf nicht fortgesetzt werden.
   </p>
   <p>Gesetzlich vorgeschriebene Dokumentations- und Aufbewahrungspflichten bleiben bestehen.</p>

@@ -32,7 +32,7 @@ export const MAIN_NAV_ITEMS = [
 export const FOOTER_NAV_ITEMS = [
   { label: 'Impressum', to: '/impressum' },
   { label: 'Datenschutz', to: '/datenschutz' },
-  { label: 'Termin- und Behandlungsbedingungen', to: '/terminbedingungen' },
+  { label: 'Termin- und Sitzungsbedingungen', to: '/terminbedingungen' },
 ] as const
 
 export const APPOINTMENT_TYPES: Record<

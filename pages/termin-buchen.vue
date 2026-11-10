@@ -19,7 +19,7 @@
     <DsSection
       tone="band"
       title="Absage oder Umbuchung"
-      description="Bis 48 Stunden vor dem Termin ist Absage oder Umbuchung kostenfrei möglich. Danach gelten die Termin- und Behandlungsbedingungen."
+      description="Bis 48 Stunden vor dem Termin ist Absage oder Umbuchung kostenfrei möglich. Danach gelten die Termin- und Sitzungsbedingungen."
     >
       <DsButton to="/terminbedingungen" variant="secondary" icon="description">
         Bedingungen lesen

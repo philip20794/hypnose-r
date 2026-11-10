@@ -125,7 +125,7 @@
 
           <DsCheckbox v-model="acceptedTerms">
             Ich akzeptiere die
-            <NuxtLink to="/terminbedingungen">Termin- und Behandlungsbedingungen</NuxtLink>
+            <NuxtLink to="/terminbedingungen">Termin- und Sitzungsbedingungen</NuxtLink>
             und habe die
             <NuxtLink to="/datenschutz">Datenschutzerklärung</NuxtLink>
             gelesen.
