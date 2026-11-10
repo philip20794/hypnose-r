@@ -33,11 +33,42 @@
         <div class="about-hypnosis-reason">
           <h2>Warum ich Hypnose anbiete</h2>
           <p class="ds-section__copy">
-            Hypnose fasziniert mich, weil sie Ruhe, Fokus und innere Veränderung möglich
-            machen kann, wenn man sich wirklich darauf einlässt. Ich begleite Menschen gerne
-            in einem ruhigen, klar geführten Rahmen und bringe dabei meine eigene frische,
-            offene Art mit. Mein Ziel ist, dass du dich im Termin gut orientiert, ernst
-            genommen und nicht gedrängt fühlst.
+            Meine Faszination für Hypnose begleitet mich bereits seit meiner Kindheit. Schon
+            damals durfte ich erste Erfahrungen mit Hypnose machen und war beeindruckt von
+            den Möglichkeiten, die in unserem Inneren und unserem Unterbewusstsein verborgen
+            liegen.
+          </p>
+          <p class="ds-section__copy">
+            Während meiner Ausbildung zur Heilpraktikerin für Psychotherapie begegnete mir
+            schließlich die Möglichkeit, mich intensiv im Bereich Hypnose weiterzubilden und
+            einen Master in Hypnose zu absolvieren. Anfangs war es ein spontaner Gedanke:
+            Warum eigentlich nicht? Doch bereits nach kurzer Zeit wurde daraus eine echte
+            Leidenschaft.
+          </p>
+          <p class="ds-section__copy">
+            Je tiefer ich in dieses Wissen eintauchte, desto mehr begeisterte mich die Arbeit
+            mit Hypnose. Ich begann, das Wissen förmlich aufzusaugen und erkannte immer mehr,
+            welches Potenzial diese Methode in sich trägt. Bis heute fasziniert mich die
+            Verbindung aus fundiertem Wissen, innerer Arbeit und der Möglichkeit, Menschen
+            auf ihrem persönlichen Weg zu begleiten.
+          </p>
+          <p class="ds-section__copy">
+            Besonders erfüllend ist für mich der Moment, wenn ich sehe, dass meine Arbeit
+            einem Menschen wirklich weiterhelfen kann. Zu erleben, wie sich neue Perspektiven
+            eröffnen, innere Prozesse in Bewegung kommen und Veränderungen möglich werden,
+            schenkt auch mir unglaublich viel Energie und Motivation.
+          </p>
+          <p class="ds-section__copy">
+            Für mich ist Hypnose weit mehr als nur eine spannende Methode. Sie ist eine
+            Möglichkeit, Menschen auf einer tieferen Ebene zu begegnen und sie dabei zu
+            unterstützen, ihre eigenen Ressourcen und Lösungen wiederzuentdecken. Ich schätze
+            besonders, dass Hypnose einen direkten und zugleich individuellen Zugang zu
+            persönlichen Themen ermöglichen kann.
+          </p>
+          <p class="ds-section__copy">
+            Genau diese Verbindung aus Faszination, Wirksamkeit und der Freude daran,
+            Menschen ein Stück auf ihrem Weg begleiten zu dürfen, ist der Grund, warum
+            Hypnose heute ein so wichtiger Teil meiner Arbeit ist.
           </p>
         </div>
         <ZoomableImage
@@ -56,10 +87,10 @@
     >
       <div class="studio-current-layout">
         <ZoomableImage
-          class="studio-placeholder-image-frame"
-          image-class="studio-placeholder-image"
-          :src="STUDIO_DETAIL_IMAGE"
-          alt="Platzhalterbild für das Hypnose-Studio"
+          class="studio-image-frame"
+          image-class="studio-image"
+          :src="studioImage"
+          alt="Hypnose-Studio von Runa Weiland in Frankfurt-Heddernheim"
           loading="lazy"
         />
         <DsCard title="Wichtig zu wissen" icon="health_and_safety">
@@ -77,8 +108,9 @@
 </template>
 
 <script setup lang="ts">
-import certificateImage from '~/assets/zertifikat.jpg'
-import { OWNER_NAME, PROFILE_IMAGE, SITE_NAME, SITE_URL, STUDIO_DETAIL_IMAGE } from '~/src/constants/site'
+import studioImage from '~/assets/hypnose_studio-optimized.jpg'
+import certificateImage from '~/assets/zertifikat-optimized.jpg'
+import { OWNER_NAME, PROFILE_IMAGE, SITE_NAME, SITE_URL } from '~/src/constants/site'
 
 usePageSeo({
   title: `${OWNER_NAME} - Hypnose in Frankfurt`,

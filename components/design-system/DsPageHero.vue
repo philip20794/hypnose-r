@@ -1,6 +1,15 @@
 <template>
   <section class="ds-hero" :aria-labelledby="titleId">
-    <img class="ds-hero__image" :src="image" :alt="imageAlt" loading="eager" />
+    <img
+      class="ds-hero__image"
+      :src="image"
+      :alt="imageAlt"
+      :width="imageWidth"
+      :height="imageHeight"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+    />
     <div class="ds-hero__shade" aria-hidden="true" />
     <div class="ds-hero__inner">
       <p v-if="eyebrow" class="ds-eyebrow">{{ eyebrow }}</p>
@@ -23,11 +32,15 @@ withDefaults(
     description: string
     image: string
     imageAlt: string
+    imageWidth?: number
+    imageHeight?: number
     eyebrow?: string
     titleId?: string
   }>(),
   {
     eyebrow: undefined,
+    imageWidth: undefined,
+    imageHeight: undefined,
     titleId: 'page-title',
   },
 )

@@ -77,10 +77,10 @@
 </template>
 
 <script setup lang="ts">
+import studioImage from '~/assets/hypnose_studio-optimized.jpg'
 import {
   BOOKING_ADDRESS,
   CONTACT_EMAIL,
-  HERO_IMAGE,
   SITE_NAME,
   SITE_URL,
   WHATSAPP_DISPLAY_NUMBER,
@@ -94,7 +94,7 @@ usePageSeo({
   description:
     'Kontakt, WhatsApp, Adresse und Anfahrt für Hypnose R in Frankfurt-Heddernheim: Alt-Heddernheim 43, 60439 Frankfurt am Main.',
   path: '/kontakt',
-  image: HERO_IMAGE,
+  image: studioImage,
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',

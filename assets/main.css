@@ -456,12 +456,12 @@
   align-items: stretch;
 }
 
-.studio-placeholder-image-frame {
+.studio-image-frame {
   width: 100%;
   min-height: 100%;
 }
 
-.studio-placeholder-image {
+.studio-image {
   display: block;
   width: 100%;
   height: 100%;

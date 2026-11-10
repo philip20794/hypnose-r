@@ -11,8 +11,6 @@ export const CONTACT_PHONE = '+49 1523 3542001'
 export const WHATSAPP_NUMBER = '+4915233542001'
 export const WHATSAPP_DISPLAY_NUMBER = '+49 1523 3542001'
 export const SOCIAL_IMAGE = '/images/preview-1200x630.png'
-export const HERO_IMAGE = '/images/studio-interior-placeholder.png'
-export const STUDIO_DETAIL_IMAGE = '/images/studio-detail-placeholder.png'
 export const PROFILE_IMAGE = '/images/runa-weiland-portrait.jpg'
 export const HYPNOSIS_PRICE_EUR = 120
 

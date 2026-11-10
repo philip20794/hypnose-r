@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": ".output/public",
+    "trailingSlash": false,
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -96,13 +97,13 @@
     ],
     "redirects": [
       {
-        "source": "/datenschutz",
-        "destination": "/datenschutzerklaerung/",
+        "source": "/datenschutzerklaerung{,/**}",
+        "destination": "/datenschutz",
         "type": 301
       },
       {
-        "source": "/agb",
-        "destination": "/allgemeinegeschaeftsbedingungen/",
+        "source": "/agb{,/**}",
+        "destination": "/allgemeinegeschaeftsbedingungen",
         "type": 301
       }
     ]

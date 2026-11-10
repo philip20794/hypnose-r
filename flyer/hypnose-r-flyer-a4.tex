@@ -1,6 +1,8 @@
 \documentclass[10pt]{article}
 
-\usepackage[landscape,a4paper,margin=0mm]{geometry}
+% Vollflächiger A4-Druckbogen: keine Außenränder und drei gleich breite
+% Flyer nebeneinander. Dadurch genügen zwei senkrechte Schnitte.
+\usepackage[landscape,a4paper,margin=0mm,noheadfoot]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
@@ -29,18 +31,13 @@
 \definecolor{muted}{HTML}{61596A}
 \definecolor{line}{HTML}{D5C6B2}
 
-\newcommand{\PanelW}{148.5}
+\newcommand{\PanelW}{99}
 \newcommand{\PanelH}{210}
 \newcommand{\SiteUrl}{hypnose-r.de}
-\newcommand{\BookingUrl}{hypnose-r.de/termin-buchen}
-\newcommand{\FullBookingUrl}{https://hypnose-r.de/termin-buchen}
+\newcommand{\BookingUrl}{hypnose-r.de}
+\newcommand{\FullBookingUrl}{https://hypnose-r.de}
 
 \newcommand{\Sans}[1]{{\fontfamily{phv}\selectfont #1}}
-
-\newcommand{\CutLine}{%
-  \draw[line width=0.25pt, dashed, color=line] (148.5,0) -- (148.5,210);
-  \node[rotate=90, anchor=center, color=muted, font=\scriptsize] at (148.5,105) {Schnittlinie};
-}
 
 \newcommand{\FineRule}[2]{%
   \draw[gold, line width=0.25mm] (#1-16,#2) -- (#1-4,#2);
@@ -73,17 +70,15 @@
 }
 
 \newcommand{\StepItem}[5]{%
-  \fill[aubergine] (#1,#2) circle (5.2);
-  \draw[accent, line width=0.25mm] (#1,#2) circle (5.2);
-  \node[text=paperLight, font=\fontsize{8.8}{10}\selectfont\bfseries] at (#1,#2) {#3};
-  \fill[paperLight, opacity=0.92] (#1+14,#2-6.8) circle (8.8);
-  \draw[line, line width=0.25mm] (#1+14,#2-6.8) circle (8.8);
-  \begin{scope}[shift={(#1+14,#2-6.8)}]
-    #4
-  \end{scope}
-  \node[anchor=west, text width=43mm, align=left] at (#1+27,#2-1) {%
-    {\color{aubergine}\fontsize{9.4}{10.6}\selectfont\bfseries #5\par}
+  \fill[aubergine] (#1,#2) circle (4.3);
+  \draw[accent, line width=0.22mm] (#1,#2) circle (4.3);
+  \node[text=paperLight, font=\fontsize{7.2}{8}\selectfont\bfseries] at (#1,#2) {#3};
+  \node[anchor=west, text width=58mm, align=left] at (#1+8,#2) {%
+    {\color{aubergine}\fontsize{8.6}{10.2}\selectfont\bfseries #5\par}
   };
+  \ifnum#3<3
+    \draw[line, line width=0.18mm] (#1+8,#2-10) -- (#1+70,#2-10);
+  \fi
 }
 
 \newcommand{\IconChat}{%
@@ -136,8 +131,8 @@
         (68,0) -- (148.5,0) -- (148.5,108)
         .. controls (126,116) and (111,105) .. (95,88)
         .. controls (80,72) and (72,68) .. (68,56) -- cycle;
-      \node[anchor=south east, inner sep=0pt] at (151,0)
-        {\includegraphics[height=124mm]{../public/images/studio-detail-placeholder.png}};
+      \node[anchor=south east, inner sep=0pt] at (224,0)
+        {\includegraphics[height=124mm]{../assets/hypnose_studio.png}};
       \fill[paperLight, opacity=0.18] (68,0) rectangle (148.5,112);
     \end{scope}
     \draw[gold, line width=0.28mm]
@@ -157,16 +152,16 @@
     \FineRule{38}{99}
     \node[anchor=north west, text width=62mm, align=left] at (18,91) {%
       {\color{ink}\Sans{\fontsize{8.5}{11}\selectfont
-      Hypnose in Frankfurt-Heddernheim\\
-      für Entspannung und mentale\\
-      Regeneration. Persönliche Zielarbeit\\
-      ruhig geführt und in deinem Tempo.}\par}
+      Ein natürlicher Zustand tiefer\\
+      Entspannung und fokussierter\\
+      Aufmerksamkeit. Ruhig geführt\\
+      und in deinem Tempo.}\par}
     };
 
     \node[anchor=north west, text=aubergine, font=\fontsize{10.5}{12}\selectfont] at (14,66)
       {Ich begleite dich bei:};
     \foreach \y/\icon/\text in {
-      53/{01}/{Entspannung},
+      53/{01}/{Tiefe Entspannung},
       41/{02}/{Mentale Regeneration},
       29/{03}/{Persönliche Zielarbeit},
       17/{04}/{Zeit für dich}
@@ -229,20 +224,23 @@
     \draw[gold, line width=0.35mm] (112,167) circle (24.4);
 
     \node[anchor=north, text width=70mm, text=aubergine, align=center, font=\fontsize{19}{22}\selectfont] at (51,194)
-      {Ruhig. Klar.\\In deinem Tempo.};
+      {Was ist\\Hypnose?};
     \FineRule{51}{151}
     \node[anchor=north, text width=73mm, align=center] at (51,143) {%
       {\color{ink}\Sans{\fontsize{8.2}{10.5}\selectfont
-      Jede Sitzung ist individuell. In einem geschützten Rahmen begleite ich dich Schritt für Schritt - vom ersten Gespräch bis zur ruhigen Nachbesprechung.}\par}
+      Hypnose ist ein natürlicher Zustand\\
+      tiefer Entspannung und fokussierter\\
+      Aufmerksamkeit. Du bleibst ansprechbar,\\
+      behältst die Kontrolle und wirst ruhig begleitet.}\par}
     };
 
     \node[anchor=west, text=aubergine, font=\fontsize{12}{14}\selectfont] at (20,113)
       {So läuft eine Sitzung ab:};
-    \draw[gold, line width=0.25mm, dashed] (27,99) -- (27,64);
+    % Ruhiger Textaufbau ohne Nummern, Icons und Verbindungslinie.
 
-    \StepItem{27}{99}{1}{\IconChat}{Kennenlernen\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Wir sprechen über dein Anliegen.}}}
-    \StepItem{27}{81}{2}{\IconTarget}{Ziel klären\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Wir stimmen den Fokus der Sitzung ab.}}}
-    \StepItem{27}{63}{3}{\IconCalm}{Geführte Hypnose\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Du wirst ruhig durch die Phase begleitet.}}}
+    \StepItem{27}{99}{1}{\IconChat}{Vorgespräch\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Fragen und Anliegen klären.}}}
+    \StepItem{27}{81}{2}{\IconTarget}{Vorbereitung\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Ablauf und Fokus abstimmen.}}}
+    \StepItem{27}{63}{3}{\IconCalm}{Hypnosephase\\[-0.2mm]{\Sans{\fontsize{6.9}{8.4}\selectfont\color{muted}Ruhig und klar begleitet.}}}
 
     \ContactIcon{18}{36}{W}
     \node[anchor=west, text=paperLight, font=\Sans{\fontsize{8}{9.5}\selectfont}] at (28,36)
@@ -259,9 +257,164 @@
     \draw[accent, line width=0.4mm, rounded corners=2mm] (111,15) rectangle (136,40);
     \node[anchor=center] at (123.5,27.5) {\qrcode[height=21mm]{\FullBookingUrl}};
     \node[anchor=north, text=paperLight, align=center, font=\Sans{\fontsize{6.8}{8}\selectfont}] at (123.5,12.2)
-      {Termin scannen};
+      {Website scannen};
 
     \node[anchor=west, text=paper, font=\Sans{\fontsize{5.7}{7}\selectfont}] at (8,4)
+      {Hinweis: Kein Ersatz für medizinische oder psychotherapeutische Behandlung.};
+  \end{scope}
+}
+
+\renewcommand{\FrontPanel}[2]{%
+  \begin{scope}[shift={(#1,#2)}]
+    \clip (0,0) rectangle (\PanelW,\PanelH);
+    \fill[paperLight] (0,0) rectangle (\PanelW,\PanelH);
+
+    \path[fill=lavenderSoft, opacity=0.32]
+      (0,210) .. controls (8,198) and (10,182) .. (4,165)
+      .. controls (0,151) and (4,132) .. (0,118) -- cycle;
+    \draw[gold, line width=0.25mm]
+      (14,210) .. controls (5,191) and (9,175) .. (4,158)
+      .. controls (1,145) and (6,130) .. (0,118);
+
+    \path[fill=paper, opacity=0.9]
+      (0,0) -- (0,77)
+      .. controls (13,85) and (31,84) .. (43,70)
+      .. controls (55,55) and (57,23) .. (52,0) -- cycle;
+
+    \begin{scope}
+      \clip
+        (51,0) -- (99,0) -- (99,101)
+        .. controls (89,105) and (80,99) .. (70,88)
+        .. controls (61,76) and (54,66) .. (51,54) -- cycle;
+      \node[anchor=south east, inner sep=0pt] at (157,0)
+        {\includegraphics[height=106mm]{../assets/hypnose_studio.png}};
+      \fill[paperLight, opacity=0.18] (51,0) rectangle (99,104);
+    \end{scope}
+    \draw[gold, line width=0.25mm]
+      (51,54) .. controls (54,66) and (61,76) .. (70,88)
+      .. controls (80,99) and (89,105) .. (99,101);
+
+    \path[fill=paper, opacity=0.95]
+      (0,0) -- (0,78)
+      .. controls (13,86) and (32,83) .. (43,69)
+      .. controls (54,55) and (56,24) .. (51,0) -- cycle;
+
+    \LogoHeader{49.5}{198}
+
+    \node[anchor=north west, text width=74mm, align=left] at (10,145) {%
+      {\color{aubergine}\fontsize{22}{25}\selectfont Ruhe beginnt\\im Kopf.\par}
+    };
+    \FineRule{26}{103}
+    \node[anchor=north west, text width=48mm, align=left] at (10,95) {%
+      {\color{ink}\Sans{\fontsize{8}{10.4}\selectfont
+      Ein natürlicher Zustand tiefer\\
+      Entspannung und fokussierter\\
+      Aufmerksamkeit. Ruhig geführt\\
+      und in deinem Tempo.}\par}
+    };
+
+    \node[anchor=north west, text=aubergine, font=\fontsize{10.2}{12}\selectfont] at (8,68)
+      {Ich begleite dich bei:};
+    \foreach \y/\icon/\text in {
+      55/{01}/{Entspannung},
+      44/{02}/{Regeneration},
+      33/{03}/{Zielarbeit},
+      22/{04}/{Zeit für dich}
+    }{
+      \SmallIcon{13}{\y}{\icon}
+      \draw[line, line width=0.16mm] (22,\y-4.9) -- (48,\y-4.9);
+      \node[anchor=west, text width=28mm, text=ink, font=\Sans{\fontsize{7.4}{8.9}\selectfont}] at (22,\y) {\text};
+    }
+
+    \fill[aubergine, rounded corners=2.2mm] (50,22.5) rectangle (92,36);
+    \draw[gold, line width=0.28mm, rounded corners=2.2mm] (50,22.5) rectangle (92,36);
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{8.1}{9.6}\selectfont\bfseries}] at (54,30.9)
+      {Erstgespräch};
+    \node[anchor=west, text=paper, font=\Sans{\fontsize{6.7}{7.8}\selectfont}] at (54,26.5)
+      {kostenlos \textperiodcentered{} 15 Minuten};
+
+    \fill[paperLight, rounded corners=2.2mm] (50,8) rectangle (92,20.2);
+    \draw[gold, line width=0.28mm, rounded corners=2.2mm] (50,8) rectangle (92,20.2);
+    \node[anchor=west, text=aubergine, font=\Sans{\fontsize{8}{9.4}\selectfont\bfseries}] at (54,15.5)
+      {Hypnose};
+    \node[anchor=west, text=ink, font=\Sans{\fontsize{6.7}{7.8}\selectfont}] at (54,11.5)
+      {60 Minuten \textperiodcentered{} 120 EUR};
+  \end{scope}
+}
+
+\renewcommand{\BackPanel}[2]{%
+  \begin{scope}[shift={(#1,#2)}]
+    \clip (0,0) rectangle (\PanelW,\PanelH);
+    \fill[paperLight] (0,0) rectangle (\PanelW,\PanelH);
+
+    \path[fill=lavenderSoft, opacity=0.26]
+      (86,210) .. controls (78,197) and (83,180) .. (99,165)
+      -- (99,210) -- cycle;
+    \path[fill=paper, opacity=0.88]
+      (0,210) -- (0,143)
+      .. controls (14,150) and (29,146) .. (41,157)
+      .. controls (55,170) and (70,164) .. (83,179)
+      .. controls (91,190) and (94,202) .. (99,210) -- cycle;
+
+    \path[fill=aubergine]
+      (0,0) -- (0,50)
+      .. controls (20,45) and (39,45) .. (56,50)
+      .. controls (75,56) and (86,53) .. (99,49)
+      -- (99,0) -- cycle;
+    \draw[gold, line width=0.25mm]
+      (0,50) .. controls (20,45) and (39,45) .. (56,50)
+      .. controls (75,56) and (86,53) .. (99,49);
+    \path[fill=lavender, opacity=0.18]
+      (0,0) -- (0,41)
+      .. controls (22,36) and (36,37) .. (50,43)
+      .. controls (68,51) and (84,49) .. (99,44)
+      -- (99,0) -- cycle;
+
+    \begin{scope}
+      \clip (76,169) circle (16.5);
+      \node[anchor=center, inner sep=0pt] at (76,169)
+        {\includegraphics[height=37mm]{../public/images/runa-weiland-portrait.jpg}};
+    \end{scope}
+    \draw[paperLight, line width=0.95mm] (76,169) circle (16.5);
+    \draw[gold, line width=0.3mm] (76,169) circle (17.8);
+
+    \node[anchor=north, text width=46mm, text=aubergine, align=center, font=\fontsize{17.5}{20.5}\selectfont] at (30,194)
+      {Was ist\\Hypnose?};
+    \FineRule{30}{153}
+    \node[anchor=north, text width=76mm, align=center] at (49.5,145) {%
+      {\color{ink}\Sans{\fontsize{8.2}{10.2}\selectfont
+      Hypnose ist ein natürlicher Zustand tiefer\\
+      Entspannung und fokussierter Aufmerksamkeit.\\
+      Du bleibst ansprechbar, behältst die Kontrolle\\
+      und wirst ruhig begleitet.}\par}
+    };
+
+    \node[anchor=west, text=aubergine, font=\fontsize{11}{13}\selectfont] at (10,116)
+      {So läuft eine Sitzung ab:};
+    % Dreistufiger, klar gegliederter Sitzungsablauf.
+
+    \StepItem{13}{101}{1}{\IconChat}{Vorgespräch\\[-0.2mm]{\Sans{\fontsize{6.5}{7.8}\selectfont\color{muted}Fragen und Anliegen klären.}}}
+    \StepItem{13}{81}{2}{\IconTarget}{Vorbereitung\\[-0.2mm]{\Sans{\fontsize{6.5}{7.8}\selectfont\color{muted}Ablauf und Fokus abstimmen.}}}
+    \StepItem{13}{61}{3}{\IconCalm}{Hypnosephase\\[-0.2mm]{\Sans{\fontsize{6.5}{7.8}\selectfont\color{muted}Ruhig und klar begleitet.}}}
+
+    \ContactIcon{10}{41}{W}
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{6.8}{8}\selectfont}] at (19,41)
+      {\SiteUrl};
+    \ContactIcon{10}{31}{@}
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{6.8}{8}\selectfont}] at (19,31)
+      {info@hypnose-r.de};
+    \ContactIcon{10}{21}{O}
+    \node[anchor=west, text=paperLight, font=\Sans{\fontsize{6.8}{8}\selectfont}] at (19,21)
+      {Alt-Heddernheim 43};
+
+    \draw[accent, line width=0.22mm] (59,20) -- (59,49);
+    \fill[paperLight, rounded corners=1.8mm] (67,23) rectangle (91,47);
+    \draw[accent, line width=0.34mm, rounded corners=1.8mm] (67,23) rectangle (91,47);
+    \node[anchor=center] at (79,35) {\qrcode[height=20mm]{\FullBookingUrl}};
+    \node[anchor=south, text=paperLight, align=center, font=\Sans{\fontsize{6.1}{7.2}\selectfont}] at (79,48.8)
+      {Website scannen};
+
+    \node[anchor=south, text width=88mm, align=center, text=paper, font=\Sans{\fontsize{4}{4.8}\selectfont}] at (49.5,7.5)
       {Hinweis: Kein Ersatz für medizinische oder psychotherapeutische Behandlung.};
   \end{scope}
 }
@@ -276,7 +429,9 @@
 }
 
 \begin{document}
-\RenderSheet{\FrontPanel{0}{0}\FrontPanel{148.5}{0}\CutLine}
+% Die Hintergrundfläche liegt bewusst bis an alle vier Papierkanten.
+% Es gibt keine Stege zwischen den Flyern und keine Schnittmarken am Rand.
+\RenderSheet{\fill[paperLight] (0,0) rectangle (297,210);\FrontPanel{0}{0}\FrontPanel{99}{0}\FrontPanel{198}{0}}
 \newpage
-\RenderSheet{\BackPanel{0}{0}\BackPanel{148.5}{0}\CutLine}
+\RenderSheet{\fill[paperLight] (0,0) rectangle (297,210);\BackPanel{0}{0}\BackPanel{99}{0}\BackPanel{198}{0}}
 \end{document}

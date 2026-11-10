@@ -4,8 +4,10 @@
       eyebrow=""
       title="Hypnose in Frankfurt"
       description="Hypnose R bietet ruhige Hypnosesitzungen in Frankfurt-Heddernheim für Entspannung, mentale Regeneration und persönliche Zielarbeit. Für erste Fragen kannst du ein kostenloses Erstgespräch reservieren."
-      :image="HERO_IMAGE"
-      image-alt="Ruhiger Sitzungsraum für Hypnose in Frankfurt-Heddernheim"
+      :image="studioImage"
+      image-alt="Hypnose-Studio in Frankfurt-Heddernheim"
+      :image-width="1448"
+      :image-height="1086"
     >
       <template #actions>
         <DsButton to="/termin-buchen?type=intro" icon="event_available" size="large">
@@ -75,8 +77,8 @@
 </template>
 
 <script setup lang="ts">
+import studioImage from '~/assets/hypnose_studio-optimized.jpg'
 import {
-  HERO_IMAGE,
   OWNER_NAME,
   PROFILE_IMAGE,
   SITE_DESCRIPTION,
@@ -88,7 +90,7 @@ usePageSeo({
   title: 'Hypnose Frankfurt-Heddernheim',
   description: SITE_DESCRIPTION,
   path: '/',
-  image: HERO_IMAGE,
+  image: studioImage,
   schema: [
     {
       '@context': 'https://schema.org',
@@ -96,7 +98,7 @@ usePageSeo({
       name: SITE_NAME,
       url: SITE_URL,
       description: SITE_DESCRIPTION,
-      image: `${SITE_URL}${HERO_IMAGE}`,
+      image: `${SITE_URL}${studioImage}`,
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Alt-Heddernheim 43',
