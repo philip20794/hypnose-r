@@ -47,7 +47,7 @@
 
     <h2>4. Grenzen des Angebots</h2>
     <p>
-      Das Angebot umfasst keine &auml;rztliche Behandlung und keine Behandlung
+      Das Angebot umfasst keine &auml;rztliche Behandlung, keine psychotherapeutischen Behandlungen und keine Behandlung
       k&ouml;rperlicher Erkrankungen.
     </p>
     <p>
